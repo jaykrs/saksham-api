@@ -1,0 +1,79 @@
+{
+  "kind": "collectionType",
+  "collectionName": "healthcareworkers",
+  "info": {
+    "singularName": "healthcareworker",
+    "pluralName": "healthcareworkers",
+    "displayName": "healthcareworker"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "phoneNumber": {
+      "type": "biginteger",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "age": {
+      "type": "integer",
+      "required": true
+    },
+    "sex": {
+      "type": "string"
+    },
+    "DOB": {
+      "type": "date",
+      "required": true
+    },
+    "region": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean",
+      "required": true
+    },
+    "supervisor": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "zipcode": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "string"
+    },
+    "longitude": {
+      "type": "string"
+    },
+    "customerCount": {
+      "type": "biginteger"
+    },
+    "totalVisit": {
+      "type": "biginteger"
+    },
+    "avatar": {
+      "type": "string"
+    }
+  }
+}

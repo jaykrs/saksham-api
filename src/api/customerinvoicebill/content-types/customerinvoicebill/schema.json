@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customerinvoicebills",
+  "info": {
+    "singularName": "customerinvoicebill",
+    "pluralName": "customerinvoicebills",
+    "displayName": "customerinvoicebill"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "customerName": {
+      "type": "string",
+      "required": true
+    },
+    "customerEmail": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "invoiceDate": {
+      "type": "datetime"
+    },
+    "inviceAmount": {
+      "type": "biginteger"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "tests": {
+      "type": "string"
+    },
+    "paymentStatus": {
+      "type": "string"
+    },
+    "paymentDate": {
+      "type": "datetime"
+    },
+    "orderNumber": {
+      "type": "biginteger"
+    },
+    "asignedTo": {
+      "type": "string"
+    }
+  }
+}

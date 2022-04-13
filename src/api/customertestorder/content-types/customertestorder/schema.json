@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customertestorders",
+  "info": {
+    "singularName": "customertestorder",
+    "pluralName": "customertestorders",
+    "displayName": "customertestorder"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "customerName": {
+      "type": "string",
+      "required": true
+    },
+    "customerEmail": {
+      "type": "email",
+      "required": true
+    },
+    "orderNumber": {
+      "type": "biginteger"
+    },
+    "testDate": {
+      "type": "datetime"
+    },
+    "asignedTo": {
+      "type": "string"
+    },
+    "testName": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "aptLatitude": {
+      "type": "string"
+    },
+    "aptLongitude": {
+      "type": "string"
+    },
+    "contact": {
+      "type": "text"
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}

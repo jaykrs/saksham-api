@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "consultants",
+  "info": {
+    "singularName": "consultant",
+    "pluralName": "consultants",
+    "displayName": "consultant"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "phoneNumber": {
+      "type": "biginteger",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "expYear": {
+      "type": "biginteger",
+      "required": true
+    },
+    "education": {
+      "type": "string",
+      "required": true
+    },
+    "specialization": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean",
+      "required": true
+    },
+    "avatar": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "zipcode": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "string"
+    },
+    "longitude": {
+      "type": "string"
+    },
+    "customerCount": {
+      "type": "biginteger"
+    },
+    "totalVisit": {
+      "type": "biginteger"
+    }
+  }
+}

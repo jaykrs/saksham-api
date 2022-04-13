@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testcosts",
+  "info": {
+    "singularName": "testcost",
+    "pluralName": "testcosts",
+    "displayName": "testcost"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "lapName": {
+      "type": "string"
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "createdBY": {
+      "type": "string"
+    },
+    "servingCity": {
+      "type": "string"
+    }
+  }
+}

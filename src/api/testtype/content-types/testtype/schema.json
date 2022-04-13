@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testtypes",
+  "info": {
+    "singularName": "testtype",
+    "pluralName": "testtypes",
+    "displayName": "testtype"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "testName": {
+      "type": "string",
+      "required": true
+    },
+    "sex": {
+      "type": "string"
+    },
+    "weightRange": {
+      "type": "string"
+    },
+    "ageRange": {
+      "type": "string"
+    },
+    "minRange": {
+      "type": "integer"
+    },
+    "maxRange": {
+      "type": "integer"
+    },
+    "createdBY": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "imagePath": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "suggestion": {
+      "type": "text"
+    },
+    "consultant": {
+      "type": "string"
+    },
+    "tag": {
+      "type": "string"
+    }
+  }
+}

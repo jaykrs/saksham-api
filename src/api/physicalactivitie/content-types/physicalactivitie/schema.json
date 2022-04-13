@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "physicalactivities",
+  "info": {
+    "singularName": "physicalactivitie",
+    "pluralName": "physicalactivities",
+    "displayName": "physicalactivitie"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "imagePath": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "sex": {
+      "type": "string"
+    },
+    "weightRange": {
+      "type": "string"
+    },
+    "ageRange": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "minRange": {
+      "type": "string"
+    },
+    "maxRange": {
+      "type": "string"
+    },
+    "createdBY": {
+      "type": "string"
+    },
+    "consultant": {
+      "type": "string"
+    },
+    "timeinMin": {
+      "type": "integer"
+    },
+    "supportedDevice": {
+      "type": "string"
+    },
+    "impactOn": {
+      "type": "string"
+    },
+    "benifitsFor": {
+      "type": "text"
+    }
+  }
+}

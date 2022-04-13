@@ -1,0 +1,146 @@
+{
+  "kind": "collectionType",
+  "collectionName": "up_users",
+  "info": {
+    "name": "user",
+    "description": "",
+    "singularName": "user",
+    "pluralName": "users",
+    "displayName": "User"
+  },
+  "options": {
+    "draftAndPublish": false,
+    "timestamps": true
+  },
+  "attributes": {
+    "username": {
+      "type": "string",
+      "minLength": 3,
+      "unique": true,
+      "configurable": false,
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "minLength": 6,
+      "configurable": false,
+      "required": true
+    },
+    "provider": {
+      "type": "string",
+      "configurable": false
+    },
+    "password": {
+      "type": "password",
+      "minLength": 6,
+      "configurable": false,
+      "private": true
+    },
+    "resetPasswordToken": {
+      "type": "string",
+      "configurable": false,
+      "private": true
+    },
+    "confirmationToken": {
+      "type": "string",
+      "configurable": false,
+      "private": true
+    },
+    "confirmed": {
+      "type": "boolean",
+      "default": false,
+      "configurable": false
+    },
+    "blocked": {
+      "type": "boolean",
+      "default": false,
+      "configurable": false
+    },
+    "role": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.role",
+      "inversedBy": "users",
+      "configurable": false
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "phoneNumber": {
+      "type": "biginteger",
+      "required": true
+    },
+    "age": {
+      "type": "integer",
+      "required": true,
+      "default": 20
+    },
+    "sex": {
+      "type": "string",
+      "required": true
+    },
+    "DOB": {
+      "type": "date",
+      "required": true
+    },
+    "visitDate": {
+      "type": "date",
+      "required": true
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "visitDone": {
+      "type": "boolean",
+      "required": true
+    },
+    "address": {
+      "type": "text"
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "state": {
+      "type": "string",
+      "required": true
+    },
+    "country": {
+      "type": "string",
+      "required": true
+    },
+    "zipcode": {
+      "required": true,
+      "default": 20,
+      "type": "integer"
+    },
+    "latitude": {
+      "type": "string"
+    },
+    "longitude": {
+      "type": "string"
+    },
+    "emergencyContact": {
+      "type": "string",
+      "required": true
+    },
+    "relation": {
+      "type": "string"
+    },
+    "bloodGroup": {
+      "type": "string"
+    },
+    "generaticDesease": {
+      "type": "string"
+    },
+    "healthworker": {
+      "type": "string"
+    },
+    "avatar": {
+      "type": "string"
+    }
+  }
+}

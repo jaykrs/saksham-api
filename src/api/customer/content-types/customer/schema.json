@@ -1,0 +1,91 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customers",
+  "info": {
+    "singularName": "customer",
+    "pluralName": "customers",
+    "displayName": "customer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "phoneNumber": {
+      "type": "biginteger",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "sex": {
+      "type": "string",
+      "required": true
+    },
+    "age": {
+      "required": true,
+      "type": "integer"
+    },
+    "DOB": {
+      "type": "date",
+      "required": true
+    },
+    "visitDate": {
+      "type": "date",
+      "required": true
+    },
+    "isActive": {
+      "type": "boolean",
+      "required": true
+    },
+    "visitDone": {
+      "type": "boolean"
+    },
+    "address": {
+      "type": "string",
+      "required": false
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "zipcode": {
+      "type": "string"
+    },
+    "latirude": {
+      "type": "string"
+    },
+    "longitude": {
+      "type": "string"
+    },
+    "emergencyContact": {
+      "type": "string"
+    },
+    "relation": {
+      "type": "string"
+    },
+    "bloodGroup": {
+      "type": "string"
+    },
+    "generaticDesease": {
+      "type": "string"
+    },
+    "healthworker": {
+      "type": "string"
+    },
+    "avatar": {
+      "type": "string"
+    }
+  }
+}

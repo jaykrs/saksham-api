@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "healthprofiles",
+  "info": {
+    "singularName": "healthprofile",
+    "pluralName": "healthprofiles",
+    "displayName": "healthprofile"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "customerEmail": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "customerName": {
+      "type": "string"
+    },
+    "testType": {
+      "type": "string",
+      "required": true
+    },
+    "result": {
+      "type": "string"
+    },
+    "unitType": {
+      "type": "string"
+    },
+    "riskLevel": {
+      "type": "string"
+    },
+    "createdBY": {
+      "type": "string"
+    },
+    "createdOn": {
+      "type": "date",
+      "default": "2022-04-17",
+      "required": true
+    },
+    "tag": {
+      "type": "string"
+    },
+    "height": {
+      "type": "string"
+    },
+    "weight": {
+      "type": "string"
+    },
+    "attachment": {
+      "type": "string"
+    }
+  }
+}
